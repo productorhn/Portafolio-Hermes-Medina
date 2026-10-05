@@ -1,0 +1,395 @@
+body{
+    font-family: poppins;
+    margin: 0;
+    padding: 0;
+}
+
+p{
+   font-size: 20px; 
+}
+
+.lista a{
+    background: none;
+    color: black;
+    padding: 20px 10px 20px 10px;
+}
+
+li{
+    list-style: none;
+    margin-right: 25px;
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul{
+    display: flex;
+
+}
+a{
+    text-decoration: none;
+    /*color: black;*/
+    background: #5cb8ff;
+    padding: 20px 30px 20px 30px;
+    color: white;
+}
+
+.titular{
+    text-align: center;
+    margin-top: 100px;
+}
+
+h1{
+    font-size: 60px;
+    margin: 0;
+}
+
+h2{
+    font-size: 25px;
+}
+
+header{
+    background: url(images/fondo.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+.contenedor{
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+}
+
+/*Empieza seccion sobre mi*/
+
+h3{
+    text-align: center;
+    font-weight: normal;
+    font-size: 52px;
+}
+
+.contenedor-sobremi{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contenedor-parrafoBoton{
+    width: 42%;
+}
+
+.contenedor-parrafoBoton p{
+    font-size: 18px;
+}
+
+.contenedor-parrafoBoton a{
+    margin-top: 20px;
+    display: inline-block;
+}
+
+/*Empieza seccion servicios*/
+
+.contenedor-servicios{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.servicio{
+    width: 24%;
+    padding: 38px;
+    border-radius: 15px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.violeta{
+    background: #5055df;
+}
+
+.celeste{
+    background: #40a8f9;
+}
+
+.servicio h4{
+    font-size: 28px;
+    margin: 0;
+}
+
+.servicio img{
+    float: right;
+}
+
+.servicio p{
+    height: 200px;
+}
+
+/*Empieza mis trabajos*/
+
+span{
+    font-size: 80px;
+    color: #5cb8ff;
+}
+
+.owl-nav{
+    text-align: center;
+}
+
+/*empieza Porque trabajar conmigo*/
+
+.contenedor-porque{
+    display: flex;
+    justify-content: space-around;
+}
+
+.porque-singular{
+    width: 30%;
+    text-align: center;
+}
+
+.porque-singular h4{
+    font-size: 18px;
+    margin: 0;
+    
+}
+
+.porque-singular a{
+    display: inline-block;
+}
+
+.porque-singular p{
+    font-size: 16px;
+    line-height: 26px;
+    
+}
+
+/*empieza seccion blog*/
+
+.contenedor-publicaciones{
+    display: flex;
+    justify-content: space-around;
+}
+
+#blog{
+    background: #f9fafc;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    display: none;
+}
+
+.publicacion{
+    width: 30%;
+    box-shadow: 1px 1px 14px #ccc;
+    background: #fff;
+    padding-bottom: 20px;
+}
+
+#blog img{
+    width: 100%;
+}
+
+#blog h4{
+    font-size: 26px;
+    text-align: center;
+    margin: 0px;
+}
+
+#blog p{
+    font-size: 16px;
+    text-align: justify;
+    margin: 0px 10px 30px 10px;
+    color: #5a6169;
+}
+
+#blog a{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.segunda img{
+    height: 245px;
+}
+
+/*empieza seccion que esperas*/
+
+#que-esperas{
+    background: linear-gradient(rgba(84, 93, 220, .94), rgba(96, 171, 245, .9));
+    text-align: center;
+    padding: 50px 0px 50px 0px;
+}
+
+#que-esperas h3{
+    color: #fff;
+    font-size: 23px;
+    margin-bottom: 40px;
+    
+}
+
+#que-esperas a{
+    padding: 20px 45px 20px 45px;
+    transition: 1s;
+
+}
+
+#que-esperas a:hover{
+    color: black;
+    transition: 1s;
+    background: #25d366;
+    transform: scale(1.2);
+    display: inline-block;
+}
+
+/*empieza imagen whatsapp*/
+
+.whatsapp a{
+    
+    background: none;
+    position: fixed;
+    top: 85%;
+    right: 1%;
+
+}
+
+.menu-icon{
+    display: none;
+}
+
+#git{
+    color: #fff;
+    font-size: 10px;
+    background: none;
+    margin-top: 20px;
+    padding-top: 20px;
+    
+    }
+
+
+/*vista para celulares maximo ancho 800px*/
+
+@media (max-width: 800px){
+
+    nav{
+        position: absolute;
+        top: 70px;
+        left: 0px;
+        background: #5cb8ff;
+        width: 100%;
+        display: none;
+    }
+
+    .lista{
+        flex-direction: column;
+        display: flex;
+    }
+
+    .lista li{
+        margin: 10px 0px;
+    }
+
+    .menu-icon{
+        display: block;
+        width: 25px;
+    }
+
+    .titular{
+        margin-top: 10px;
+    }
+
+    h1{
+        font-size: 42px;
+    }
+
+    h2{
+        font-size: 18px;
+        margin-bottom: 36px;
+    }
+
+    h3{
+        font-size: 34px;
+        margin: 20px 0px 20px 0px;
+    }
+
+    .contenedor-sobremi{
+        flex-direction: column;
+    }
+
+    .contenedor-parrafoBoton{
+        width: 78%;
+        
+    }
+
+    .contenedor-parrafoBoton p{
+        font-size: 16px;
+        
+    }
+
+    .contenedor-parrafoBoton a{
+        margin-top: 4px;
+        
+    }
+
+    .contenedor-servicios{
+        flex-direction: column;
+    }
+
+    .servicio{
+        width: 79%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .servicio h4{
+        font-size: 24px;
+    }
+
+    .servicio p{
+        height: 292px;
+    }
+    
+    .contenedor-porque{
+        flex-direction: column;
+    }
+
+    .porque-singular{
+        width: 100%;
+    }
+
+    #blog{
+        padding-top: 3px;
+    }
+
+    .contenedor-publicaciones{
+        flex-direction: column;
+    }
+
+    .publicacion{
+        width: 100%;
+    }
+
+    #blog h4{
+        font-size: 20px;
+    }
+
+    #blog p{
+        font-size: 14px;
+        padding-top: 10px;
+    }
+
+    .imagen-sobremi{
+        width: 90%;
+    }
+}
+
+@media (min-width: 700px) and (max-width: 900px){
+
+    header{
+        height: 80vh;
+    }
+
+    .servicio p{
+        height: 159px;
+    }
+}
